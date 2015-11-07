@@ -2,6 +2,8 @@ package com.example.roxy.antitheft;
 
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -13,6 +15,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Set;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -23,7 +27,6 @@ public class MainActivity extends ActionBarActivity {
 
         final BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (!mBluetoothAdapter.isEnabled()) {
-
             new AlertDialog.Builder(this)
                     .setTitle("Bluetooth warning")
                     .setMessage("Your bluetooth needs to be on in order to proceed. " +
@@ -38,22 +41,21 @@ public class MainActivity extends ActionBarActivity {
                     })
                     .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            ImageView iv = (ImageView)findViewById(R.id.imageView);
+                            ImageView iv = (ImageView) findViewById(R.id.imageView);
                             iv.setImageResource(R.drawable.sad);
 
-                            TextView tv = (TextView)findViewById(R.id.textView);
+                            TextView tv = (TextView) findViewById(R.id.textView);
                             tv.setText("Sorry! The application cannot run without bluetooth");
                         }
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .show();
-        }
-        else {
+        } else {
             Intent goToInitialPage = new Intent(getApplicationContext(), InitialPage.class);
             startActivity(goToInitialPage);
+            AcceptBluetoothConnection bluetoothConnection = new AcceptBluetoothConnection(mBluetoothAdapter);
+            bluetoothConnection.start();
         }
-
-
     }
 
 

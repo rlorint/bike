@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/classes.jar"
+        jar="/home/rubertu/AndroidStudioProjects/bike/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/pre-dexed/debug/classes-8367a3413a16ffa65e1f3ed8597cee0bf68b3399.jar" />
+        <dex dex="/home/rubertu/AndroidStudioProjects/bike/app/build/intermediates/pre-dexed/debug/classes-49aea8b5ba870712bbeeb47ac444059fa521c49f.jar" />
     </item>
     <item
-        jar="/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/pre-dexed/debug/classes-fd5272682fbb2d16df53b653bc8d7d9e09241786.jar" />
-    </item>
-    <item
-        jar="/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/libs/internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-2c959a791094dd31a7c235fed6391d5fdc1c8a83.jar" />
-    </item>
-    <item
-        jar="/home/roxy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jar="/home/rubertu/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-b1d0069b86ad758cea860459a5bec17377e44ad8.jar" />
+        <dex dex="/home/rubertu/AndroidStudioProjects/bike/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-6ee918905d74c9889c3a5a116f97fd2b592de7b3.jar" />
+    </item>
+    <item
+        jar="/home/rubertu/AndroidStudioProjects/bike/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/home/rubertu/AndroidStudioProjects/bike/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-fe07bba5289e13ea4a9e398b989426cd64a42ecd.jar" />
+    </item>
+    <item
+        jar="/home/rubertu/AndroidStudioProjects/bike/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/home/rubertu/AndroidStudioProjects/bike/app/build/intermediates/pre-dexed/debug/classes-b05dd16ae8dc861efbfa5a92babe3a81c503dd7f.jar" />
     </item>
 
 </items>
