@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">AntiTheft</string>
+    <string name="app_name">BikeWatcher</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_initial_page">InitialPage</string>
+    <string name="title_activity_initial_page">Bike Watcher</string>
+    <string name="scanning">scanning</string>
 
 </resources>

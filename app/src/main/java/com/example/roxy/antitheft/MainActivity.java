@@ -2,6 +2,7 @@ package com.example.roxy.antitheft;
 
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -10,8 +11,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.Set;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -53,6 +57,24 @@ public class MainActivity extends ActionBarActivity {
             startActivity(goToInitialPage);
         }
 
+        Button bluetooth = (Button)findViewById(R.id.bluetooth);
+        bluetooth.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                mBluetoothAdapter.enable();
+                Intent goToInitialPage = new Intent(getApplicationContext(), InitialPage.class);
+                startActivity(goToInitialPage);
+            }
+        });
+
+        Button buttonDiscover = (Button)findViewById(R.id.buttonDiscover);
+        buttonDiscover.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                doDiscovery();
+            }
+
+        });
+
+
 
     }
 
@@ -77,5 +99,24 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void doDiscovery() {
+        //if (D) Log.d(TAG, "doDiscovery()");
+
+       /* // Indicate scanning in the title
+        setProgressBarIndeterminateVisibility(true);
+        setTitle(R.string.scanning);
+
+        // Turn on sub-title for new devices
+        findViewById(R.id.title_new_devices).setVisibility(View.VISIBLE);
+
+        // If we're already discovering, stop it
+        if (mBluetoothAdapter.isDiscovering()) {
+            mBluetoothAdapter.cancelDiscovery();
+        }
+
+        // Request discover from BluetoothAdapter
+        mBtAdapter.startDiscovery();*/
     }
 }
