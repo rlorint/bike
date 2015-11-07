@@ -1,0 +1,5 @@
+/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/classes/debug
+/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-b1d0069b86ad758cea860459a5bec17377e44ad8.jar
+/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-2c959a791094dd31a7c235fed6391d5fdc1c8a83.jar
+/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/pre-dexed/debug/classes-fd5272682fbb2d16df53b653bc8d7d9e09241786.jar
+/home/roxy/AndroidStudioProjects/AntiTheft/app/build/intermediates/pre-dexed/debug/classes-8367a3413a16ffa65e1f3ed8597cee0bf68b3399.jar
